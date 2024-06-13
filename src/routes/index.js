@@ -1,0 +1,26 @@
+const express = require('express')
+const router = express.Router()
+
+const authRoutes = require('./authRoutes')
+const userRoutes = require('./userRoutes')
+const profileRoutes = require('./profileRoutes')
+const transactionRoutes = require('./transactionRoutes')
+const walletRoutes = require('./walletRoutes')
+const notificationRoutes = require('./notificationRoutes')
+const contactRoutes = require('./contactRoutes')
+const withdrawRoutes = require('./withdrawRoutes')
+const supportTicketRoutes = require('./supportTicketRoutes')
+const investmentRoutes = require('./investmentRoutes')
+
+router.use('/auth', authRoutes)
+router.use('/user', userRoutes)
+router.use('/profile', profileRoutes)
+router.use('/transaction', transactionRoutes)
+router.use('/wallet', walletRoutes)
+router.use('/notification', notificationRoutes)
+router.use('/contacts', contactRoutes)
+router.use('/withdraw', withdrawRoutes)
+router.use('/support-ticket', supportTicketRoutes)
+router.use('/investment', investmentRoutes)
+
+module.exports = router
